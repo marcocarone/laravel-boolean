@@ -1,0 +1,75 @@
+.dopo-corso__container {
+    background-color: #e8ebf1;
+    padding-top: 140px;
+    padding-bottom: 50px;
+
+    .wrapper {
+        max-width: 1140px;
+        margin: 0 auto;
+
+        h1 {
+            font-weight: 300;
+            font-size: 2.7em;
+            text-align: center;
+            color: #1b3c59;
+            padding-bottom: 20px;
+        }
+
+        .wrapper_studenti {
+            display: flex;
+            flex-wrap: wrap;
+
+            .box {
+                background-color: #ffffff;
+                padding: 20px;
+                flex-basis: calc(50% - 20px);
+                margin: 10px;
+                box-shadow: 5px 7px 14px 0 #b0b0b0;
+                border-radius: 5px;
+                min-height: 270px;
+
+                .top {
+                    display: flex;
+
+                    .left {
+                        img {
+                            width: 100px;
+                            border-radius: 5px;
+                        }
+                    }
+
+                    .right {
+                        margin-left: 30px;
+
+                        a {
+                            text-decoration: none;
+
+                            h2 {
+                                font-size: 1.2em;
+                                color: $colorTitle;
+                                padding-bottom: 15px;
+                            }
+                        }
+
+                        h3 {
+                            font-weight: 400;
+                            font-size: 1em;
+                            color: $colorTitle;
+                        }
+                    }
+                }
+
+                .bottom {
+                    margin-top: 20px;
+
+                    p {
+                        color: $colorTitle;
+                    }
+                }
+            }
+            .box2 {
+              flex-basis: calc(100% - 20px);
+            }
+        }
+    }
+}

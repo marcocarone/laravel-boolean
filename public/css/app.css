@@ -1,0 +1,140 @@
+@import url(https://fonts.googleapis.com/css?family=Rubik:300,400&display=swap);* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  min-width: 320px;
+}
+
+header .wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  background-color: #ffffff;
+  padding: 15px 20px;
+}
+
+header .wrapper .left img {
+  width: 200px;
+}
+
+header .wrapper .right {
+  display: flex;
+  align-items: center;
+}
+
+header .wrapper .right nav ul {
+  display: flex;
+}
+
+header .wrapper .right nav ul li {
+  list-style: none;
+  padding: 10px 25px;
+  margin: 0 10px;
+}
+
+header .wrapper .right nav ul li a {
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 0.85em;
+  text-transform: uppercase;
+  color: #1b3c59;
+}
+
+header .wrapper .right nav ul li.active {
+  border-bottom: 2px solid #61ce4e;
+}
+
+header .wrapper .right .button {
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 1em;
+  color: #ffffff;
+  text-transform: uppercase;
+  background-color: #61ce4e;
+  padding: 10px 25px;
+  border-radius: 5px;
+  vertical-align: middle;
+}
+
+.dopo-corso__container {
+  background-color: #e8ebf1;
+  padding-top: 140px;
+  padding-bottom: 50px;
+}
+
+.dopo-corso__container .wrapper {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.dopo-corso__container .wrapper h1 {
+  font-weight: 300;
+  font-size: 2.7em;
+  text-align: center;
+  color: #1b3c59;
+  padding-bottom: 20px;
+}
+
+.dopo-corso__container .wrapper .wrapper_studenti {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.dopo-corso__container .wrapper .wrapper_studenti .box {
+  background-color: #ffffff;
+  padding: 20px;
+  flex-basis: calc(50% - 20px);
+  margin: 10px;
+  box-shadow: 5px 7px 14px 0 #b0b0b0;
+  border-radius: 5px;
+  min-height: 270px;
+}
+
+.dopo-corso__container .wrapper .wrapper_studenti .box .top {
+  display: flex;
+}
+
+.dopo-corso__container .wrapper .wrapper_studenti .box .top .left img {
+  width: 100px;
+  border-radius: 5px;
+}
+
+.dopo-corso__container .wrapper .wrapper_studenti .box .top .right {
+  margin-left: 30px;
+}
+
+.dopo-corso__container .wrapper .wrapper_studenti .box .top .right a {
+  text-decoration: none;
+}
+
+.dopo-corso__container .wrapper .wrapper_studenti .box .top .right a h2 {
+  font-size: 1.2em;
+  color: #1b3c59;
+  padding-bottom: 15px;
+}
+
+.dopo-corso__container .wrapper .wrapper_studenti .box .top .right h3 {
+  font-weight: 400;
+  font-size: 1em;
+  color: #1b3c59;
+}
+
+.dopo-corso__container .wrapper .wrapper_studenti .box .bottom {
+  margin-top: 20px;
+}
+
+.dopo-corso__container .wrapper .wrapper_studenti .box .bottom p {
+  color: #1b3c59;
+}
+
+.dopo-corso__container .wrapper .wrapper_studenti .box2 {
+  flex-basis: calc(100% - 20px);
+}
+

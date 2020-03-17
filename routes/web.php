@@ -13,10 +13,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
 
-
-Route::get('/studenti/', 'StudenteController@index')->name("studente.index");
-Route::get('/studenti/show/{id}', 'StudenteController@show')->name("studente.show");
+Route::get('/', 'StudenteController@home')->name("home");
+Route::get('/dopo-il-corso/', 'StudenteController@index')->name("studente.index");
+Route::get('/dopo-il-corso/studenti/{id}', 'StudenteController@show')->name("studente.show");
