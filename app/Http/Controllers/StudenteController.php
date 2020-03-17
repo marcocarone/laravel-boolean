@@ -11,8 +11,14 @@ class StudenteController extends Controller
       return view('studenti.index');
     }
 
-    public function show()
+    public function show($id)
     {
-      return view('studenti.show');
+      $this->studenti = config("studenti.studenti");
+      if(!array_key_exists($id, $this->studenti)) {
+        abort("404");
+      }
+
+      $studente = $this->studenti[$id];
+      return view('studenti.show', compact("studente"));
     }
 }
