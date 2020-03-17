@@ -27,6 +27,10 @@ header {
                         padding: 10px 25px;
                         margin: 0 10px;
 
+                        &:hover {
+                            border-bottom: 2px solid #61ce4e;
+                        }
+
                         a {
                             text-decoration: none;
                             font-weight: 400;
@@ -43,6 +47,7 @@ header {
             }
 
             .button {
+                margin-left: 30px;
                 text-decoration: none;
                 font-weight: 400;
                 font-size: 1em;
