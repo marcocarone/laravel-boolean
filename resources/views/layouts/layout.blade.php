@@ -1,7 +1,7 @@
 @include("layouts.partials.header");
 
   <main>
-
+    @yield('main')
   </main>
   <footer>
 

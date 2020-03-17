@@ -13,7 +13,7 @@
         <ul>
           <li><a href="#">Home</a></li>
           <li><a href="#">Corso</a></li>
-          <li><a href="{{route("studente.index")}}">Dopo il corso</a></li>
+          <li><a class="{{ (Request::route()->getName() == 'studente.index') ? 'active' : '' }}" href="{{route("studente.index")}}">Dopo il corso</a></li>
         </ul>
       </nav>
     </div>

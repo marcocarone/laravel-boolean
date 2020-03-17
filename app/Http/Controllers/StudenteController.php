@@ -11,7 +11,7 @@ class StudenteController extends Controller
       return view('studenti.index');
     }
 
-    public function show();
+    public function show()
     {
       return view('studenti.show');
     }
