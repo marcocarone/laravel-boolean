@@ -37,6 +37,7 @@ header .wrapper .right nav ul li {
   list-style: none;
   padding: 10px 25px;
   margin: 0 10px;
+  border-bottom: 2px solid transparent;
 }
 
 header .wrapper .right nav ul li:hover {
