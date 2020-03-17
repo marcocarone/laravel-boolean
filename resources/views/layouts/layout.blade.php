@@ -1,10 +1,14 @@
-@include("layouts.partials.header");
+@include("layouts.partials.header")
 
-  <main>
+
+
+<main>
     @yield('main')
-  </main>
-  <footer>
+</main>
+<footer>
 
-  </footer>
+</footer>
+</body>
 
-@include("layouts.partials.footer");
+</html>
+@include("layouts.partials.footer")

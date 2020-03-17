@@ -19,4 +19,4 @@ Route::get('/', function () {
 
 
 Route::get('/studenti/', 'StudenteController@index')->name("studente.index");
-Route::get('/studenti/show/', 'StudenteController@show')->name("studente.show");
+Route::get('/studenti/show/{id}', 'StudenteController@show')->name("studente.show");
