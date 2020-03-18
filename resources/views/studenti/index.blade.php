@@ -10,9 +10,9 @@
 
         <div class="filter">
             <select name="filter" id="filter">
-              <option value="">scegli</option>
-                <option value="25">da 0 a 25 anni</option>
-                <option value="50">da 26 a 50 anni</option>
+              <option value="">Filtra per anni</option>
+                <option value="25">da 0 a 25</option>
+                <option value="50">da 26 a 50</option>
             </select>
         </div>
         <div class="wrapper_studenti">
