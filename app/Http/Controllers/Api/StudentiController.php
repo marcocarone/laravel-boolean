@@ -20,7 +20,7 @@ class StudentiController extends Controller
      ];
 
      if($data['eta'] == 25) {
-       foreach ($studenti as $key => $studente) {
+       foreach ($studenti as $studente) {
            if($studente['eta'] <= $data['eta']) {
                $result['response'][] = $studente;
            }
@@ -28,15 +28,15 @@ class StudentiController extends Controller
        return response()->json($result);
 
      }
-     // elseif ($data['eta'] == 50) {
-     //   foreach ($studenti as $key => $studente) {
-     //       if($studente['eta'] <= $data['eta'] && $studente['eta'] > 25) {
-     //           $result['response'][] = $studente;
-     //       }
-     //   }
-     //   return response()->json($result);
+     elseif ($data['eta'] == 50) {
+       foreach ($studenti as $key => $studente) {
+           if($studente['eta'] <= $data['eta'] && $studente['eta'] > 25) {
+               $result['response'][] = $studente;
+           }
+       }
+       return response()->json($result);
 
-
+ }
 
  }
 
