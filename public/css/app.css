@@ -88,6 +88,17 @@ header .wrapper .right .button {
   padding-bottom: 20px;
 }
 
+.dopo-corso__container .wrapper .filter {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+
+.dopo-corso__container .wrapper .filter select {
+  border-radius: 20px;
+  padding: 10px 20px;
+}
+
 .dopo-corso__container .wrapper .wrapper_studenti {
   display: flex;
   flex-wrap: wrap;
