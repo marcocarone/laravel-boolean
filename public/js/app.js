@@ -29898,10 +29898,11 @@ var $ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js"
 $(document).ready(function () {
   // alert("ciao");
   $('#filter').change(function () {
+    // console.log(parseInt( $(this).val()) );
     $.ajax({
       'url': window.location.protocol + '//' + window.location.host + '/api/studenti/eta',
       'data': {
-        'eta': $(this).val()
+        'eta': parseInt($(this).val())
       },
       'method': 'POST',
       success: function success(data) {

@@ -19,10 +19,26 @@ class StudentiController extends Controller
          'response' => []
      ];
 
-     // if($data['eta'] > 0 && $data['eta'] <= 25 ) {
-         $result['response'] = $studenti;
-         return response()->json($result);
-     // }
+     if($data['eta'] == 25) {
+       foreach ($studenti as $key => $studente) {
+           if($studente['eta'] <= $data['eta']) {
+               $result['response'][] = $studente;
+           }
+       }
+       return response()->json($result);
+
+     }
+     // elseif ($data['eta'] == 50) {
+     //   foreach ($studenti as $key => $studente) {
+     //       if($studente['eta'] <= $data['eta'] && $studente['eta'] > 25) {
+     //           $result['response'][] = $studente;
+     //       }
+     //   }
+     //   return response()->json($result);
+
+
 
  }
+
+
 }
