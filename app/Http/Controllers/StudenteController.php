@@ -18,12 +18,12 @@ class StudenteController extends Controller
 
     public function show($id)
     {
-        $this->studenti = config("studenti.studenti");
-        if (!array_key_exists($id, $this->studenti)) {
+        $studenti = config("studenti.studenti");
+        if (!array_key_exists($id, $studenti)) {
             abort("404");
         }
 
-        $studente = $this->studenti[$id];
+        $studente = $studenti[$id];
         return view('studenti.show', compact("studente"));
     }
 }
