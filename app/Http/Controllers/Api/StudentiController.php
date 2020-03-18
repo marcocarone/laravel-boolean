@@ -7,5 +7,10 @@ use Illuminate\Http\Request;
 
 class StudentiController extends Controller
 {
-    //
+  public function eta(Request $request)
+ {
+     $data = $request->all();
+     dd($data);
+     // return response()->json($data);
+ }
 }
