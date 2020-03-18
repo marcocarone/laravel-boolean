@@ -36,6 +36,9 @@ class StudentiController extends Controller
        }
        return response()->json($result);
 
+ } else {
+     $result['error'] = 'Nessun risultato';
+     return response()->json($result);
  }
 
  }
