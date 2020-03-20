@@ -36,7 +36,18 @@ class StudentiController extends Controller
        }
        return response()->json($result);
 
- } else {
+ } elseif ($data['eta'] == 0) {
+   foreach ($studenti as $key => $studente) {
+
+           $result['response'][] = $studente;
+
+   }
+   return response()->json($result);
+
+}
+
+
+ else {
      $result['error'] = 'Nessun risultato';
      return response()->json($result);
  }
