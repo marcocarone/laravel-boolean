@@ -16,9 +16,10 @@
             </select>
         </div> --}}
         <div class="wrapper_studenti">
-          @foreach ($studenti as $student)
+          @dd($studenti);
+          {{-- @foreach ($studenti as $student)
             @dd($student);
-          @endforeach
+          @endforeach --}}
 
 
 
