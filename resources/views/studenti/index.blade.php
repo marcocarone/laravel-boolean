@@ -41,6 +41,26 @@
     </div>
 </div>
 
+<script id="entry-template" type="text/x-handlebars-template">
+  <div class="box">
+      <div class="top">
+          <div class="left">
+              <img src="@{{img}}" alt="@{{nome}}">
+          </div>
+          <div class="right">
+              <a href="{{route("studente.show", ["id" => $key])}}">
+                  <h2>@{{nome}} ( @{{eta}} anni)</h2>
+              </a>
+              <h3> Assunt{{($studente["genere"] == "m") ? "o" : "a"}} da @{{azienda}} come @{{ruolo}}</h3>
+          </div>
+      </div>
+      <div class="bottom">
+          <p>@{{descrizione}}</p>
+      </div>
 
+
+
+  </div>
+</script>
 
 @endsection
