@@ -20,3 +20,4 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', 'StudenteController@home')->name("home");
 Route::get('/dopo-il-corso/', 'StudenteController@index')->name("studente.index");
 Route::get('/dopo-il-corso/studenti/{id}', 'StudenteController@show')->name("studente.show");
+Route::get('/database/', 'DatabaseController@index')->name("database.index");

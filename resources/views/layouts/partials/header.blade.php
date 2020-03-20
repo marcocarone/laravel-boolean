@@ -22,7 +22,7 @@
                     <li class="{{ (Request::route()->getName() == 'home') ? 'active' : '' }}"><a  href="{{route("home")}}">Home</a></li>
                     <li><a href="#">Corso</a></li>
                     <li class="{{ (Request::route()->getName() == 'studente.index') ? 'active' : '' }}"><a  href="{{route("studente.index")}}">Dopo il corso</a></li>
-                    <li><a href="#">Lezione gratuita</a></li>
+                    <li class="{{ (Request::route()->getName() == 'database.index') ? 'active' : '' }}"><a href="{{route("database.index")}}">Esempio migrate</a></li>
                 </ul>
             </nav>
             <a class="button" href="#">Candidati ora</a>
