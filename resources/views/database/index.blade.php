@@ -16,8 +16,12 @@
             </select>
         </div> --}}
         <div class="wrapper_studenti">
+          @foreach ($studenti as $student)
+            @dd($student);
+          @endforeach
 
-          @dd($studenti);
+
+
             {{-- @foreach (config("studenti.studenti") as $key => $studente)
             <div class="box">
                 <div class="top">
