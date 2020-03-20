@@ -51,7 +51,7 @@
               <a href="@{{url}}">
                   <h2>@{{nome}} ( @{{eta}} anni)</h2>
               </a>
-              <h3> Assunt{{($studente["genere"] == "m") ? "o" : "a"}} da @{{azienda}} come @{{ruolo}}</h3>
+              <h3>@{{assunzione}} da @{{azienda}} come @{{ruolo}}</h3>
           </div>
       </div>
       <div class="bottom">

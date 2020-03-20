@@ -34996,7 +34996,14 @@ $(document).ready(function () {
         for (var i = 0; i < dati.length; i++) {
           var element = dati[i];
           console.log(element);
-          element.url = window.location.protocol + '//' + window.location.host + "/dopo-il-corso/studenti/" + element.id; // console.log(element);
+          element.url = window.location.protocol + '//' + window.location.host + "/dopo-il-corso/studenti/" + element.id;
+
+          if (element.genere == "f") {
+            element.assunzione = "Assunta";
+          } else {
+            element.assunzione = "Assunto";
+          } // console.log(element);
+
 
           var html = template(element);
           $(".wrapper_studenti").append(html);
