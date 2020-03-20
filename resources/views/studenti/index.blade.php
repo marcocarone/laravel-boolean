@@ -48,7 +48,7 @@
               <img src="@{{img}}" alt="@{{nome}}">
           </div>
           <div class="right">
-              <a href="{{route("studente.show", ["id" => $key])}}">
+              <a href="@{{url}}">
                   <h2>@{{nome}} ( @{{eta}} anni)</h2>
               </a>
               <h3> Assunt{{($studente["genere"] == "m") ? "o" : "a"}} da @{{azienda}} come @{{ruolo}}</h3>

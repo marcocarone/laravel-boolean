@@ -34987,8 +34987,8 @@ $(document).ready(function () {
       },
       'method': 'POST',
       success: function success(data) {
-        var dati = data.response;
-        console.log(dati);
+        var dati = data.response; // console.log(dati);
+
         $(".wrapper_studenti").empty();
         var source = $("#entry-template").html();
         var template = Handlebars.compile(source);
@@ -34996,6 +34996,8 @@ $(document).ready(function () {
         for (var i = 0; i < dati.length; i++) {
           var element = dati[i];
           console.log(element);
+          element.url = window.location.protocol + '//' + window.location.host + "/dopo-il-corso/studenti/" + element.id; // console.log(element);
+
           var html = template(element);
           $(".wrapper_studenti").append(html);
         }

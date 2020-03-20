@@ -3,6 +3,7 @@
 return [
 "studenti" => [
   [
+    "id" => 0,
     "img" => "https://www.boolean.careers/images/students/biagini.png",
     "nome" => "Alessandro Biagini",
     "eta" => 25,
@@ -12,6 +13,7 @@ return [
     "genere" => "m"
   ],
   [
+    "id" => 1,
     "img" => "https://www.boolean.careers/images/students/poggini.png",
     "nome" => "Paola Poggini",
     "eta" => 24,
@@ -21,6 +23,7 @@ return [
     "genere" => "f"
   ],
   [
+    "id" => 2,
     "img" => "https://www.boolean.careers/images/students/masetti.png",
     "nome" => "Loana Masetti",
     "eta" => 36,
@@ -30,6 +33,7 @@ return [
     "genere" => "f"
   ],
   [
+    "id" => 3,
     "img" => "https://www.boolean.careers/images/students/patruno.png",
     "nome" => "Davide Patruno",
     "eta" => 29,
@@ -39,6 +43,7 @@ return [
     "genere" => "m"
   ],
   [
+    "id" => 4,
     "img" => "https://www.boolean.careers/images/students/castellani.png",
     "nome" => "Tommaso Castellani",
     "eta" => 30,
@@ -48,6 +53,7 @@ return [
     "genere" => "m"
   ],
   [
+    "id" => 5,
     "img" => "https://www.boolean.careers/images/students/antidormi.png",
     "nome" => "Nicholas Antidormi",
     "eta" => 20,
@@ -57,6 +63,7 @@ return [
     "genere" => "m"
   ],
   [
+    "id" => 6,
     "img" => "https://www.boolean.careers/images/students/ortenzi.png",
     "nome" => "Daniela Ortenz",
     "eta" => 27,
@@ -66,6 +73,7 @@ return [
     "genere" => "f"
   ],
   [
+    "id" => 7,
     "img" => "https://www.boolean.careers/images/students/quarticelli.png",
     "nome" => "Simone Quarticelli",
     "eta" => 32,

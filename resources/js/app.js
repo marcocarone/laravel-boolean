@@ -20,13 +20,16 @@ $(document).ready(function() {
 
 
                 var dati= data.response;
-                console.log(dati);
+                // console.log(dati);
                 $(".wrapper_studenti").empty();
                 var source = $("#entry-template").html();
                 var template = Handlebars.compile(source);
                 for (var i = 0; i < dati.length; i++) {
                   var element = dati[i];
-                    console.log(element);
+                  console.log(element);
+                  element.url = window.location.protocol + '//' +
+                      window.location.host + "/dopo-il-corso/studenti/" + element.id;
+                    // console.log(element);
                   var html = template(element);
                   $(".wrapper_studenti").append(html);
                 };
